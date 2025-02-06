@@ -1,0 +1,126 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #252542);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.display-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.display {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    padding-left: 5px;
+}
+
+.display::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+[data-copy] {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.input-container {
+    text-align: left;
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 15px;
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: #6a11cb;
+    outline: none;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+[data-indicator] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+}
+
+.generateButton {
+    width: 100%;
+    background: #ff6f61;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.generateButton:hover {
+    background: #ff3b30;
+}
